@@ -1,21 +1,25 @@
 .container {
-  padding: 0 60px;
+  /* padding: 0 60px; */
+  /* display: flex; */
 }
 svg {
   /* margin: 10px; */
-  margin-left: -500px;
+  /* margin-left: -500px; */
 }
 rect {
   width: 80;
   height: 50;
   fill: transparent;
   stroke: #fff;
+
   stroke-width: 2;
+  cursor: pointer;
 }
 polygon {
   fill: transparent;
   stroke: #fff;
   stroke-width: 2;
+  cursor: pointer;
 }
 line {
   stroke: #fff;
