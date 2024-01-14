@@ -12,20 +12,28 @@ function Svgchape() {
           // y="0"
         >
           {/* rectangle shape  */}
-          <rect x="75" y="20" width="150" height="50" />
-          <text x="120" y="50" fill="#fff">
+          <rect x="275" y="20" width="150" height="50" />
+          <text x="320" y="50" fill="#fff">
             Section B
           </text>
           {/*left trapezoid shape */}
-          <polygon points="0,200 100,230 100,300 0,330 " />
-          <text x="12" y="270" fill="#fff">
+          <polygon points="200,200 300,230 300,300 200,330 " />
+          <text x="212" y="270" fill="#fff">
             Section A
           </text>
           {/* right trapezoid shape */}
-          <polygon points="200,230 300,200 300,330 200,300" />
-          <text x="220" y="270" fill="#fff">
+          <polygon points="400,230 500,200 500,330 400,300" />
+          <text x="420" y="270" fill="#fff">
             Section C
           </text>
+          {/* Lines between shapes */}
+          <line x1="275" y1="35" x2="100" y2="35" />
+          <line x1="100" y1="50" x2="100" y2="270" />
+          <line x1="100" y1="270" x2="200" y2="270" />
+          <line x1="300" y1="270" x2="400" y2="270" />
+          <line x1="500" y1="270" x2="600" y2="270" />
+          <line x1="600" y1="270" x2="600" y2="50" />
+          <line x1="600" y1="50" x2="425" y2="50" />
         </svg>
       </div>
     </Fragment>
