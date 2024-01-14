@@ -13,17 +13,25 @@ function Svgchape() {
         >
           {/* rectangle shape  */}
           <rect
-            // className={`shape ${isClicked ? "clicked" : ""}`}
             // x="50"
             // y="10"
             width="150"
             height="50"
-            // fill={selectedShape === "barChart" ? "#fa5f3c" : "blue"}
-            // style={{ cursor: "pointer" }}
-            // onClick={() => handleShapeClick("barChart")}
           />
           <text x="45" y="30" fill="#fff">
             Section B
+          </text>
+          {/*left trapezoid shape */}
+          <polygon
+            // fill="transparent"
+            // stroke="#fff"
+            // stroke-width="2"
+            // transform="rotate(90, 50, 150)"
+            // points="40,200 50,120 70,120 90,200"
+            points="0,200 100,230 100,300 0,330 "
+          />
+          <text x="12" y="270" fill="#fff">
+            Section A
           </text>
         </svg>
       </div>

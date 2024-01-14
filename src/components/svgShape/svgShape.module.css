@@ -11,3 +11,8 @@ rect {
   stroke: #fff;
   stroke-width: 2;
 }
+polygon {
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 2;
+}
