@@ -1,5 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-  background-color: rgba(29, 27, 27, 0.424);
+.container {
+  padding: 0 60px;
+}
+svg {
+  margin: 10px;
+}
+rect {
+  width: 80;
+  height: 50;
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 2;
 }
