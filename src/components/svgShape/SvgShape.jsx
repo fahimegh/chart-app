@@ -12,26 +12,19 @@ function Svgchape() {
           // y="0"
         >
           {/* rectangle shape  */}
-          <rect
-            // x="50"
-            // y="10"
-            width="150"
-            height="50"
-          />
-          <text x="45" y="30" fill="#fff">
+          <rect x="75" y="20" width="150" height="50" />
+          <text x="120" y="50" fill="#fff">
             Section B
           </text>
           {/*left trapezoid shape */}
-          <polygon
-            // fill="transparent"
-            // stroke="#fff"
-            // stroke-width="2"
-            // transform="rotate(90, 50, 150)"
-            // points="40,200 50,120 70,120 90,200"
-            points="0,200 100,230 100,300 0,330 "
-          />
+          <polygon points="0,200 100,230 100,300 0,330 " />
           <text x="12" y="270" fill="#fff">
             Section A
+          </text>
+          {/* right trapezoid shape */}
+          <polygon points="200,230 300,200 300,330 200,300" />
+          <text x="220" y="270" fill="#fff">
+            Section C
           </text>
         </svg>
       </div>
