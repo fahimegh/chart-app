@@ -19,7 +19,7 @@ function Svgchape({ selectedShape, onShapeClick }) {
           y="20"
           width="200"
           height="50"
-          fill={selectedShape === "barChart" ? "#fa5f3c" : "none"}
+          fill={selectedShape === "barChart" ? "#fa5f3c" : "transparent"}
           onClick={() => onShapeClick("barChart")}
         />
         <text x="320" y="50" fill="#fff">
@@ -28,7 +28,7 @@ function Svgchape({ selectedShape, onShapeClick }) {
         {/*left trapezoid shape */}
         <polygon
           points="200,200 300,230 300,300 200,330 "
-          fill={selectedShape === "histogramChart" ? "#fa5f3c" : "none"}
+          fill={selectedShape === "histogramChart" ? "#fa5f3c" : "transparent"}
           onClick={() => onShapeClick("histogramChart")}
         />
         <text x="212" y="270" fill="#fff">
@@ -37,7 +37,7 @@ function Svgchape({ selectedShape, onShapeClick }) {
         {/* right trapezoid shape */}
         <polygon
           points="400,230 500,200 500,330 400,300"
-          fill={selectedShape === "lineChart" ? "#fa5f3c" : "none"}
+          fill={selectedShape === "lineChart" ? "#fa5f3c" : "transparent"}
           onClick={() => onShapeClick("lineChart")}
         />
         <text x="420" y="270" fill="#fff">

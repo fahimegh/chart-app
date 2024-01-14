@@ -24,8 +24,35 @@ function Home() {
   // onclick the svg shapes
 
   const handleShapeClick = (chartType) => {
-    setSelectedShape(chartType);
-    fetchData(chartType);
+    if (selectedShape === chartType) {
+      setSelectedShape(null); // اگر روی شکل فعال کلیک شد، آن را غیر فعال کن
+    } else {
+      setSelectedShape(chartType); // در غیر این صورت، شکل را فعال کن
+      fetchData(chartType); // داده‌های نمودار را دریافت کن
+    }
+    // setSelectedShape(chartType);
+    // fetchData(chartType);
+  };
+  const customTheme = {
+    geometries: {
+      interval: {
+        rect: {
+          style: {
+            fill: "#fff", // رنگ محور x
+          },
+        },
+      },
+    },
+    // تنظیمات محور y
+    axes: {
+      left: {
+        label: {
+          style: {
+            fill: "#fff", // رنگ محور y
+          },
+        },
+      },
+    },
   };
 
   return (
@@ -43,13 +70,14 @@ function Home() {
             {selectedShape === "barChart" && (
               <Bar
                 data={chartData}
+                theme={customTheme}
                 xField="label"
                 yField="value"
                 colorField="#56fc03"
                 label={{
                   style: {
-                    fill: "#FFFFFF",
-                    opacity: 0.6,
+                    fill: "#FFF",
+                    opacity: 0.9,
                   },
                 }}
               />
@@ -57,6 +85,7 @@ function Home() {
             {selectedShape === "histogramChart" && (
               <Histogram
                 data={chartData}
+                theme={customTheme}
                 // isGroup="true"
                 // xField="type"
                 // yField="value"
@@ -72,13 +101,14 @@ function Home() {
             {selectedShape === "lineChart" && (
               <Line
                 data={chartData}
+                theme={customTheme}
                 xField="label"
                 yField="value"
                 colorField="#ddf545"
                 label={{
                   style: {
-                    fill: "#FFFFFF",
-                    opacity: 0.6,
+                    fill: "#FFF",
+                    // opacity: 0.6,
                   },
                 }}
               />
