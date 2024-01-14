@@ -38,17 +38,17 @@ function Home() {
       interval: {
         rect: {
           style: {
-            fill: "#fff", // رنگ محور x
+            fill: "#fff",
           },
         },
       },
     },
-    // تنظیمات محور y
+
     axes: {
       left: {
         label: {
           style: {
-            fill: "#fff", // رنگ محور y
+            fill: "#fff",
           },
         },
       },
