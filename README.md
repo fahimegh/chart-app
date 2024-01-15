@@ -27,22 +27,14 @@ npx json-server --watch data/data.json --port 4000
 
 **Note: If you don't run the above command, the data related to the graphs will not be loaded, and you won't be able to view the graphs.**
 
-After running the above command successfully, outputs similar to the image below should be seen in the terminal
+After running the above command successfully, outputs similar to the image in the following folder in the directory of project
 
-<div align="center">
-  <img src="../chart-ap/src/assets/images/1.PNG" width="600px" />
-</div>
+chart-ap/src/assets/images/1.PNG
 
 ## Outputs screenshots
 
-After successfull run and clicking on the shapes you must see the outputs like following images
+After successfull run and clicking on the shapes you must see the outputs like images in the following directory
 
-<div align="center">
-  <img src="../chart-ap/src/assets/images/2.PNG" width="600px" />
-</div>
-<div align="center">
-  <img src="../chart-ap/src/assets/images/3.PNG" width="600px" />
-</div>
-<div align="center">
-  <img src="../chart-ap/src/assets/images/4.PNG" width="600px" />
-</div>
+chart-ap/src/assets/images/2.PNG
+chart-ap/src/assets/images/3.PNG
+chart-ap/src/assets/images/4.PNG
