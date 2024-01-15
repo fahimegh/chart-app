@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# React App: draw charts with ant-chart library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this project, we aim to display a graph by clicking on various sections of a shape, using the Ant-Chart library. Graph data is retrieved from a local server. The graph data in the data folder and data.json
 
-## Available Scripts
+## Environment setup
 
-In the project directory, you can run:
+This code has been tested on windows 10, react 18.2.0 and ant-chart 2.0.3
 
-### `npm start`
+- Clone the repository
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+git clone https://github.com/fahimegh/chart-app.git && cd chart-app
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Setup node environment
 
-### `npm test`
+```
+npm install
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- To load data from local server: open new terminal and insert following command
 
-### `npm run build`
+```
+npx json-server --watch data/data.json --port 4000
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Note: If you don't run the above command, the data related to the graphs will not be loaded, and you won't be able to view the graphs.**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+After running the above command successfully, outputs similar to the image below should be seen in the terminal
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<div align="center">
+  <img src="../chart-ap/src/assets/images/1.PNG" width="600px" />
+</div>
 
-### `npm run eject`
+## Outputs screenshots
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+After successfull run and clicking on the shapes you must see the outputs like following images
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div align="center">
+  <img src="../chart-ap/src/assets/images/2.PNG" width="600px" />
+</div>
+<div align="center">
+  <img src="../chart-ap/src/assets/images/3.PNG" width="600px" />
+</div>
+<div align="center">
+  <img src="../chart-ap/src/assets/images/4.PNG" width="600px" />
+</div>
