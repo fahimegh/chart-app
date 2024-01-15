@@ -2,7 +2,7 @@ import React, { Fragment, useState } from "react";
 import styled from "./svgShape.module.css";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
-function Svgchape({ selectedShape, onShapeClick }) {
+function SvgShape({ selectedShape, onShapeClick }) {
   return (
     <>
       {/* <div className={styled.container}> */}
@@ -46,9 +46,9 @@ function Svgchape({ selectedShape, onShapeClick }) {
         {/* Lines between shapes */}
         <line x1="250" y1="45" x2="170" y2="45" />
         <line x1="170" y1="45" x2="170" y2="135" />
-        {/* <line x1="100" y1="270" x2="200" y2="270" /> */}
+
         <line x1="220" y1="190" x2="480" y2="190" />
-        {/* <line x1="500" y1="270" x2="600" y2="270" /> */}
+
         <line x1="530" y1="135" x2="530" y2="45" />
         <line x1="530" y1="45" x2="450" y2="45" />
       </svg>
@@ -56,4 +56,4 @@ function Svgchape({ selectedShape, onShapeClick }) {
     </>
   );
 }
-export default Svgchape;
+export default SvgShape;

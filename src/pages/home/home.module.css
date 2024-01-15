@@ -1,11 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-
+  background-color: #3a4454;
   color: #fff;
 }
 
 .container {
   display: flex;
-  background-color: #3a4454;
+  flex-wrap: wrap;
+  height: 100%;
 }
