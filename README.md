@@ -29,12 +29,12 @@ npx json-server --watch data/data.json --port 4000
 
 After running the above command successfully, outputs similar to the image in the following folder in the directory of project
 
-- chart-ap/src/assets/images/1.PNG
+- src/assets/images/1.PNG
 
 ## Outputs screenshots
 
 After successfull run and clicking on the shapes you must see the outputs like images in the following directory
 
-- chart-ap/src/assets/images/2.PNG
-- chart-ap/src/assets/images/3.PNG
-- chart-ap/src/assets/images/4.PNG
+- src/assets/images/2.PNG
+- src/assets/images/3.PNG
+- src/assets/images/4.PNG
