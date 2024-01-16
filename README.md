@@ -10,6 +10,7 @@ This code has been tested on windows 10, react 18.2.0 and ant-chart 2.0.3
 
 ```
 git clone https://github.com/fahimegh/chart-app.git && cd chart-app
+git checkout master
 ```
 
 - Setup node environment
