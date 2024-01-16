@@ -64,7 +64,6 @@ function Home() {
             {selectedShape === "histogramChart" && (
               <Histogram
                 data={chartData}
-                theme={customTheme}
                 binField="value"
                 binWidth="2"
                 colorField="#0c6aed"
